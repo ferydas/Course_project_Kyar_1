@@ -1,0 +1,80 @@
+/* ===========================
+   index.scss — главная
+=========================== */
+
+@use "base" as *;
+
+/* HERO */
+.glavnaya {
+  padding: 40px 0 50px;
+
+  .glavnaya-in {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .hero-text p {
+    color: $txt2;
+    margin-bottom: 18px;
+  }
+a { 
+  text-decoration: none;
+ }
+  .hero-media {
+    display: flex; 
+    border-radius: $rad;
+    background: radial-gradient(circle at top left, #4f8cff, #151823 55%, #0f1115);
+    min-height: 220px;
+    justify-content: left; 
+    align-items: center;
+    padding-left: 30px; 
+  }
+
+  @media (max-width: 900px) {
+    .glavnaya-in {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* Блоки */
+.preim,
+.kategorii {
+  padding: 20px 0 30px;
+}
+
+.grid-info {
+  margin-top: 16px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-info {
+  background: $fon2;
+  border-radius: $rad;
+  padding: 22px;
+  text-decoration: none;
+  color: $txt;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: $anim;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba($sin, 0.4);
+  }
+
+  p {
+    color: $txt2;
+  }
+}

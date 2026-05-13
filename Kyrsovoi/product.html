@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Товар — ТехноМаркет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body class="dark-theme">
+
+<header class="shapka">
+  <div class="box shapka-in">
+
+    <a class="logo" href="index.html">
+<svg width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg">
+  <rect width="46" height="36" fill="#367eff" rx="4" />
+  <text x="23" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">TM</text>
+</svg>
+      <span class="logo-text">ТехноМаркет</span>
+    </a>
+
+    
+    <input type="checkbox" id="burgerToggle" class="burger-toggle">
+    <label for="burgerToggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav" id="mainNav">
+      <ul>
+        <li><a class="active" href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="about.html">О магазине</a></li>
+        
+        <!-- Корзина теперь внутри навигации -->
+        <li class="nav-cart">
+          <button id="cartBtn" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+
+<main>
+  <div class="box">
+
+    <div id="productContainer" class="product-page">
+      <!-- JS вставит сюда товар -->
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="box">
+    <p>&copy; 2026 ТехноМаркет. Учебный проект.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

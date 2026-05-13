@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О магазине — ТехноМаркет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body class="dark-theme">
+
+<header class="shapka">
+  <div class="box shapka-in">
+
+    <a class="logo" href="index.html">
+<svg width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg">
+  <rect width="46" height="36" fill="#367eff" rx="4" />
+  <text x="23" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">TM</text>
+</svg>
+      <span class="logo-text">ТехноМаркет</span>
+    </a>
+
+    
+    <input type="checkbox" id="burgerToggle" class="burger-toggle">
+    <label for="burgerToggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a class="active" href="about.html">О магазине</a></li>
+        
+        <!-- Корзина теперь внутри навигации -->
+        <li class="nav-cart">
+          <button id="cartBtn" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+
+<main>
+
+  <section class="about-page">
+    <div class="box">
+
+      <h1>О магазине</h1>
+
+      <!-- Основной текст -->
+      <div class="about-block">
+        <p>
+          ТехноМаркет — современный магазин бытовой техники и электроники, ориентированный на качество,
+          удобство и честный сервис. Мы предлагаем широкий ассортимент техники для дома, кухни и ухода,
+          отбирая только надёжные модели от проверенных производителей.
+        </p>
+
+        <p>
+          Наша команда ежедневно работает над тем, чтобы покупка техники была простой, понятной и
+          комфортной. Мы предоставляем подробные характеристики, удобные фильтры, консультации и
+          оперативную поддержку — всё, чтобы вы могли сделать правильный выбор.
+        </p>
+      </div>
+
+      <!-- Миссия компании -->
+      <h2 class="about-subtitle">Миссия компании</h2>
+      <div class="about-block">
+        <p>
+          Мы стремимся сделать качественную технику доступной каждому. Наша миссия — обеспечить клиентов
+          надёжными решениями для дома, сочетая современные технологии, честные цены и высокий уровень сервиса.
+        </p>
+      </div>
+
+      <!-- Наши преимущества -->
+      <h2 class="about-subtitle">Наши преимущества</h2>
+      <div class="about-grid">
+        <div class="about-block">
+          <h3>Широкий ассортимент</h3>
+          <p>Техника для кухни, дома и ухода — всё в одном месте.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Гарантия качества</h3>
+          <p>Мы работаем только с официальными поставщиками и брендами.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Быстрая доставка</h3>
+          <p>Доставляем технику по городу и регионам в удобное время.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Поддержка клиентов</h3>
+          <p>Помогаем с выбором, консультируем и сопровождаем на всех этапах покупки.</p>
+        </div>
+      </div>
+
+      <!-- Почему нам доверяют -->
+      <h2 class="about-subtitle">Почему нам доверяют</h2>
+      <div class="about-grid">
+        <div class="about-block">
+          <h3>Прозрачные цены</h3>
+          <p>Без скрытых платежей и навязанных услуг.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Опыт и экспертиза</h3>
+          <p>Мы знаем технику и помогаем подобрать лучшее решение.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Проверенные бренды</h3>
+          <p>Только надёжные производители с официальной гарантией.</p>
+        </div>
+
+        <div class="about-block">
+          <h3>Тысячи довольных клиентов</h3>
+          <p>Нас выбирают за качество, сервис и удобство.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Наши услуги -->
+<h2 class="about-subtitle services-title">Наши услуги</h2>
+
+<div class="services-preview">
+  <p class="services-text">
+    Мы предлагаем полный комплекс услуг по доставке, установке и обслуживанию бытовой техники.
+    Наши специалисты помогут вам на каждом этапе — от покупки до подключения.
+  </p>
+
+  <a href="services.html" class="services-btn">Перейти к услугам</a>
+</div>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="box">
+    <p>&copy; 2026 ТехноМаркет. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

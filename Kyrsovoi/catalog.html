@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог — ТехноМаркет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/card.css">
+</head>
+
+<body class="dark-theme">
+
+<header class="shapka">
+  <div class="box shapka-in">
+
+    <a class="logo" href="index.html">
+<svg width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg">
+  <rect width="46" height="36" fill="#367eff" rx="4" />
+  <text x="23" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">TM</text>
+</svg>
+      <span class="logo-text">ТехноМаркет</span>
+    </a>
+
+    
+    <input type="checkbox" id="burgerToggle" class="burger-toggle">
+    <label for="burgerToggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a class="active" href="catalog.html">Каталог</a></li>
+        <li><a href="about.html">О магазине</a></li>
+        
+        <!-- Корзина теперь внутри навигации -->
+        <li class="nav-cart">
+          <button id="cartBtn" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+
+<main>
+
+<section class="katalog">
+    <div class="box">
+
+      <h1>Каталог товаров</h1>
+
+      <div class="filtry">
+        <label>
+          <span>Категория</span>
+          <select id="categoryFilter">
+            <option value="all">Все</option>
+            <option value="Холодильники">Холодильники</option>
+            <option value="Стиральные машины">Стиральные машины</option>
+            <option value="Пылесосы">Пылесосы</option>
+            <option value="Телевизоры">Телевизоры</option>
+            <option value="Микроволновки">Микроволновки</option>
+            <option value="Утюги">Утюги</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Бренд</span>
+          <input id="brandFilter" type="text" placeholder="Например, LG">
+        </label>
+
+        <div class="filtry-btns">
+          <button class="btn btn-line" id="applyFilters" type="button">Применить</button>
+          <button class="btn btn-line" id="resetFilters" type="button">Сбросить</button>
+        </div>
+      </div>
+
+      <div class="grid-katalog" id="catalogGrid">
+
+        <!-- ХОЛОДИЛЬНИКИ -->
+        <div class="card-tovar" data-category="Холодильники">
+          <a href="product.html?id=holod1">
+            <div class="card-media">
+              <img src="img/holod1.png" alt="LG GA‑B509">
+            </div>
+            <h2 class="card-title">LG GA‑B509</h2>
+            <p class="card-meta">Бренд: LG • Класс: A++</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">2884,84 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <div class="card-tovar" data-category="Холодильники">
+          <a href="product.html?id=holod2">
+            <div class="card-media">
+              <img src="img/holod2.png" alt="Samsung RB37">
+            </div>
+            <h2 class="card-title">Samsung RB37</h2>
+            <p class="card-meta">Бренд: Samsung • Класс: A+</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">2601,67 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <!-- СТИРАЛЬНЫЕ МАШИНЫ -->
+        <div class="card-tovar" data-category="Стиральные машины">
+          <a href="product.html?id=stir1">
+            <div class="card-media">
+              <img src="img/stir1.png" alt="Bosch WAN24260">
+            </div>
+            <h2 class="card-title">Bosch WGE02209PL</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Bosch • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">1889,89 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <div class="card-tovar" data-category="Стиральные машины">
+          <a href="product.html?id=stir2">
+            <div class="card-media">
+              <img src="img/stir2.png" alt="LG F2V5">
+            </div>
+            <h2 class="card-title">LG F2V5</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: LG • Класс: A+++</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">1599,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <!-- ПЫЛЕСОСЫ -->
+        <div class="card-tovar" data-category="Пылесосы">
+          <a href="product.html?id=vacuum1">
+            <div class="card-media">
+              <img src="img/vacuum1.png" alt="Xiaomi Mi Robot">
+            </div>
+            <h2 class="card-title">Xiaomi Mi Robot Vacuum H40</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Xiaomi • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">999,0 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <div class="card-tovar" data-category="Пылесосы">
+          <a href="product.html?id=vacuum2">
+            <div class="card-media">
+              <img src="img/vacuum2.png" alt="Dyson V11">
+            </div>
+            <h2 class="card-title">Dyson V11</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Dyson • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">1595,09 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+        
+        <!-- ТЕЛЕВИЗОРЫ -->
+        <div class="card-tovar" data-category="Телевизоры">
+          <a href="product.html?id=tv1">
+            <div class="card-media">
+              <img src="img/tv1.png" alt="Samsung QLED 55">
+            </div>
+            <h2 class="card-title">Samsung QLED 55"</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Samsung • Класс: A+</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">2399,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <div class="card-tovar" data-category="Телевизоры">
+          <a href="product.html?id=tv2">
+            <div class="card-media">
+              <img src="img/tv2.png" alt="LG OLED C1">
+            </div>
+            <h2 class="card-title">LG OLED C1</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: LG • Класс: A+</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">3499,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <!-- МИКРОВОЛНОВКИ -->
+        <div class="card-tovar" data-category="Микроволновки">
+          <a href="product.html?id=micro1">
+            <div class="card-media">
+              <img src="img/micro1.png" alt="Samsung MG23">
+            </div>
+            <h2 class="card-title">Samsung MG23</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Samsung • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">507,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <div class="card-tovar" data-category="Микроволновки">
+          <a href="product.html?id=micro2">
+            <div class="card-media">
+              <img src="img/micro2.png" alt="LG NeoChef">
+            </div>
+            <h2 class="card-title">LG NeoChef</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: LG • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">479,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <!-- УТЮГИ -->
+        <div class="card-tovar" data-category="Утюги">
+          <a href="product.html?id=ytug1">
+            <div class="card-media">
+              <img src="img/ytug1.png" alt="Philips GC4909">
+            </div>
+            <h2 class="card-title">Philips DST3041</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Philips • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">149,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+
+        <div class="card-tovar" data-category="Утюги">
+          <a href="product.html?id=ytug2">
+            <div class="card-media">
+              <img src="img/ytug2.png" alt="Tefal TurboPro">
+            </div>
+            <h2 class="card-title">Tefal TurboPro</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+            <p class="card-meta">Бренд: Tefal • Класс: A</p>
+          </a>   
+          <div class="card-foot">
+            <span class="card-price">159,00 BYN</span>
+            <button class="btn-add">В корзину</button>
+          </div>  
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="box">
+    <p>&copy; 2026 ТехноМаркет. Учебный проект.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

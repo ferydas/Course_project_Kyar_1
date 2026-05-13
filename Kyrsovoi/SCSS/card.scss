@@ -1,0 +1,78 @@
+/* ===========================
+   card.scss — карточка товара
+=========================== */
+
+@use "base" as *;
+
+.card-tovar {
+  width: 100%;
+  max-width: 340px;
+  background: $fon3;
+  border-radius: $rad;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  transition: $anim;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba($sin, 0.45);
+  }
+}
+
+.card-media {
+  background: #2a2f3d;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+}
+
+
+.card-title {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $txt;
+}
+
+.card-meta {
+  margin: 0 0 12px;
+  color: $txt2;
+}
+
+.card-foot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-weight: 700;
+  color: $sin;
+}
+
+.btn-add {
+  background: $sin;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: $anim;
+
+  &:hover {
+    background: $sin2;
+    transform: translateY(-2px);
+  }
+}

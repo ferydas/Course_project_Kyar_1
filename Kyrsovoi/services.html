@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Услуги магазина — ТехноМаркет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body class="dark-theme">
+
+<header class="shapka">
+  <div class="box shapka-in">
+
+    <a class="logo" href="index.html">
+<svg width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg">
+  <rect width="46" height="36" fill="#367eff" rx="4" />
+  <text x="23" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">TM</text>
+</svg>
+      <span class="logo-text">ТехноМаркет</span>
+    </a>
+
+    
+    <input type="checkbox" id="burgerToggle" class="burger-toggle">
+    <label for="burgerToggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="about.html">О магазине</a></li>
+        <li><a class="active" href="services.html">Услуги</a></li>
+        
+        <!-- Корзина теперь внутри навигации -->
+        <li class="nav-cart">
+          <button id="cartBtn" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+<section class="services-page">
+    <div class="box">
+
+      <h1>Услуги магазина</h1>
+
+      <p class="services-intro">
+        Мы предлагаем полный комплекс услуг по доставке, установке и обслуживанию бытовой техники.
+        Наши специалисты выполняют работу быстро, аккуратно и с гарантией качества.
+      </p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h2>Доставка по Беларуси</h2>
+          <p>Доставим технику в любой регион страны в удобное время.</p>
+          <span class="service-price">от 15 BYN</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Подъём на этаж</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Аккуратный подъём крупной техники на любой этаж.</p>
+          <span class="service-price">от 10 BYN</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Установка техники</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Профессиональная установка стиральных машин, плит, духовок и др.</p>
+          <span class="service-price">от 25 BYN</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Подключение стиральных машин</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Подключение к водопроводу, канализации и проверка работы.</p>
+          <span class="service-price">от 20 BYN</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Подключение холодильников</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Установка, выравнивание, подключение и первичная настройка.</p>
+          <span class="service-price">от 18 BYN</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Гарантийное обслуживание</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Официальная гарантия и помощь в сервисных центрах.</p>
+          <span class="service-price">Бесплатно</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Расширенная гарантия</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Дополнительная защита техники на 1–3 года.</p>
+          <span class="service-price">от 30 BYN</span>
+        </div>
+
+        <div class="service-card">
+          <h2>Утилизация старой техники</h2> <!-- ИЗМЕНЕНО: h3 заменен на h2 -->
+          <p>Заберём старую технику при доставке новой.</p>
+          <span class="service-price">от 12 BYN</span>
+        </div>
+
+      </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="box">
+    <p>&copy; 2026 ТехноМаркет. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

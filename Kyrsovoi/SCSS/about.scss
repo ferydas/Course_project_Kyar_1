@@ -1,0 +1,88 @@
+@use "base" as *;
+
+.about-page {
+  padding: 40px 0 60px;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  .about-subtitle {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+
+  .about-block {
+    background: $fon2;
+    border-radius: $rad;
+    padding: 22px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
+
+    p {
+      margin: 0;
+      color: $txt2;
+      line-height: 1.6;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .about-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+
+// БЛОК "НАШИ УСЛУГИ" НА О МАГАЗИНЕ
+
+
+.services-title {
+  margin-top: 50px;
+}
+
+.services-preview {
+  background: #23262f;
+  padding: 30px 35px;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border-left: 5px solid #4F8CFF;
+
+  .services-text {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #d7dbe6;
+    margin-bottom: 25px;
+  }
+
+  .services-btn {
+    display: inline-block;
+    padding: 14px 26px;
+    background: #4F8CFF;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: 0.2s;
+
+    &:hover {
+      background: #3c6fd1;
+    }
+  }
+}
+
+a { 
+  text-decoration: none; 
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ТехноМаркет — Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="dark-theme">
+
+<header class="shapka">
+  <div class="box shapka-in">
+
+    <a class="logo" href="index.html">
+<svg width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg">
+  <rect width="46" height="36" fill="#367eff " rx="4" />
+  <text x="23" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">TM</text>
+</svg>
+      <span class="logo-text">ТехноМаркет</span>
+    </a>
+
+    
+    <input type="checkbox" id="burgerToggle" class="burger-toggle">
+    <label for="burgerToggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav" id="mainNav">
+      <ul>
+        <li><a class="active" href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="about.html">О магазине</a></li>
+        
+        
+        <li class="nav-cart">
+          <button id="cartBtn" class="cart">
+            <span class="cart-icon">🛒</span>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <section class="glavnaya">
+    <div class="box glavnaya-in">
+      <div class="hero-text">
+        <h1>Техника, которая делает жизнь проще</h1>
+        <p>Выбирайте надёжную бытовую технику с удобной доставкой и гарантией.</p>
+        <a class="btn btn-blue" href="catalog.html">Перейти в каталог</a>
+      </div>
+      <div class="hero-media">
+        <h1>Твой дом. Твои правила. Твое техно.</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="preim">
+    <div class="box">
+      <h2>Почему выбирают нас</h2>
+
+      <div class="grid-info">
+        <div class="card-info">
+          <h3>Официальная гарантия</h3>
+          <p>Только проверенные бренды и официальная гарантия.</p>
+        </div>
+
+        <div class="card-info">
+          <h3>Быстрая доставка</h3>
+          <p>Доставка по городу и регионам в удобное время.</p>
+        </div>
+
+        <div class="card-info">
+          <h3>Поддержка</h3>
+          <p>Помощь в выборе и настройке техники.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kategorii">
+    <div class="box">
+      <h2>Популярные категории</h2>
+
+      <div class="grid-info">
+
+        <a href="catalog.html#fridges" class="card-info category-card">
+          <h3>Холодильники</h3>
+        </a>
+
+        <a href="catalog.html#washers" class="card-info category-card">
+          <h3>Стиральные машины</h3>
+        </a>
+
+        <a href="catalog.html#vacuums" class="card-info category-card">
+          <h3>Пылесосы</h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="box">
+    <p>&copy; 2026 ТехноМаркет. Учебный проект.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+
+  <!-- ХОЛОДИЛЬНИКИ -->
+  <product id="holod1">
+    <name>LG GA‑B509</name>
+    <brand>LG</brand>
+    <category>Холодильники</category>
+    <price currency="BYN">2884.84</price>
+    <image>img/holod1.png</image>
+    <rating>4.7</rating>
+    <reviews>214</reviews>
+    <description>Современный холодильник LG с технологией DoorCooling+, равномерным охлаждением и низким уровнем шума.</description>
+    <specs>
+      <spec name="Класс">A++</spec>
+      <spec name="Общий объем">384 л</spec>
+      <spec name="Объем холодильной камеры">277 л</spec>
+      <spec name="Объем морозильной камеры">107 л</spec>
+      <spec name="Уровень шума">36 дБ</spec>
+      <spec name="Тип управления">Электронное</spec>
+      <spec name="Система охлаждения">Total No Frost</spec>
+    </specs>
+  </product>
+
+  <product id="holod2">
+    <name>Samsung RB37</name>
+    <brand>Samsung</brand>
+    <category>Холодильники</category>
+    <price currency="BYN">2601.67</price>
+    <image>img/holod2.png</image>
+    <rating>4.8</rating>
+    <reviews>389</reviews>
+    <description>Холодильник Samsung с технологией SpaceMax и системой All-Around Cooling.</description>
+    <specs>
+      <spec name="Класс">A+</spec>
+      <spec name="Общий объем">367 л</spec>
+      <spec name="Объем холодильной камеры">269 л</spec>
+      <spec name="Объем морозильной камеры">98 л</spec>
+      <spec name="Уровень шума">35 дБ</spec>
+      <spec name="Тип управления">Электронное</spec>
+      <spec name="Система охлаждения">No Frost</spec>
+    </specs>
+  </product>
+
+  <!-- СТИРАЛЬНЫЕ МАШИНЫ -->
+  <product id="stir1">
+    <name>Bosch WGE02209PL</name>
+    <brand>Bosch</brand>
+    <category>Стиральные машины</category>
+    <price currency="BYN">1889.89</price>
+    <image>img/stir1.png</image>
+    <rating>4.6</rating>
+    <reviews>152</reviews>
+    <description>Надёжная стиральная машина Bosch с двигателем EcoSilence Drive и функцией SpeedPerfect.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Максимальная загрузка">7 кг</spec>
+      <spec name="Скорость отжима">1200 об/мин</spec>
+      <spec name="Уровень шума стирки">52 дБ</spec>
+      <spec name="Уровень шума отжима">72 дБ</spec>
+      <spec name="Тип двигателя">Инверторный</spec>
+    </specs>
+  </product>
+
+  <product id="stir2">
+    <name>LG F2V5</name>
+    <brand>LG</brand>
+    <category>Стиральные машины</category>
+    <price currency="BYN">1599.00</price>
+    <image>img/stir2.png</image>
+    <rating>4.8</rating>
+    <reviews>512</reviews>
+    <description>Стиральная машина LG с технологией AI DD, которая подбирает оптимальный режим стирки.</description>
+    <specs>
+      <spec name="Класс">A+++</spec>
+      <spec name="Максимальная загрузка">7 кг</spec>
+      <spec name="Скорость отжима">1200 об/мин</spec>
+      <spec name="Уровень шума">55 дБ</spec>
+      <spec name="Тип двигателя">Инверторный</spec>
+    </specs>
+  </product>
+
+  <!-- ПЫЛЕСОСЫ -->
+  <product id="vacuum1">
+    <name>Xiaomi Mi Robot Vacuum H40</name>
+    <brand>Xiaomi</brand>
+    <category>Пылесосы</category>
+    <price currency="BYN">999.00</price>
+    <image>img/vacuum1.png</image>
+    <rating>4.7</rating>
+    <reviews>1780</reviews>
+    <description>Робот-пылесос Xiaomi с лазерной навигацией и мощностью всасывания 4000 Па.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Тип">Робот-пылесос</spec>
+      <spec name="Мощность всасывания">4000 Па</spec>
+      <spec name="Объем контейнера">450 мл</spec>
+      <spec name="Навигация">LDS</spec>
+    </specs>
+  </product>
+
+  <product id="vacuum2">
+    <name>Dyson V11</name>
+    <brand>Dyson</brand>
+    <category>Пылесосы</category>
+    <price currency="BYN">1595.09</price>
+    <image>img/vacuum2.png</image>
+    <rating>4.9</rating>
+    <reviews>4210</reviews>
+    <description>Вертикальный пылесос Dyson с интеллектуальной регулировкой мощности и экраном.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Тип">Вертикальный</spec>
+      <spec name="Время работы">60 мин</spec>
+      <spec name="Мощность всасывания">185 AW</spec>
+      <spec name="Фильтрация">HEPA</spec>
+    </specs>
+  </product>
+
+  <!-- ТЕЛЕВИЗОРЫ -->
+  <product id="tv1">
+    <name>Samsung QLED 55"</name>
+    <brand>Samsung</brand>
+    <category>Телевизоры</category>
+    <price currency="BYN">2399.00</price>
+    <image>img/tv1.png</image>
+    <rating>4.8</rating>
+    <reviews>1330</reviews>
+    <description>55-дюймовый QLED телевизор Samsung с поддержкой HDR10+ и частотой 120 Гц.</description>
+    <specs>
+      <spec name="Класс">A+</spec>
+      <spec name="Диагональ">55"</spec>
+      <spec name="Разрешение">4K UHD</spec>
+      <spec name="Частота">120 Гц</spec>
+      <spec name="Тип матрицы">QLED</spec>
+    </specs>
+  </product>
+
+  <product id="tv2">
+    <name>LG OLED C1</name>
+    <brand>LG</brand>
+    <category>Телевизоры</category>
+    <price currency="BYN">3499.00</price>
+    <image>img/tv2.png</image>
+    <rating>4.9</rating>
+    <reviews>980</reviews>
+    <description>OLED телевизор LG с идеальной контрастностью и поддержкой Dolby Vision.</description>
+    <specs>
+      <spec name="Класс">A+</spec>
+      <spec name="Диагональ">55"</spec>
+      <spec name="Разрешение">4K UHD</spec>
+      <spec name="Тип матрицы">OLED</spec>
+      <spec name="Частота">120 Гц</spec>
+    </specs>
+  </product>
+
+  <!-- МИКРОВОЛНОВКИ -->
+  <product id="micro1">
+    <name>Samsung MG23</name>
+    <brand>Samsung</brand>
+    <category>Микроволновки</category>
+    <price currency="BYN">507.00</price>
+    <image>img/micro1.png</image>
+    <rating>4.6</rating>
+    <reviews>640</reviews>
+    <description>Микроволновая печь Samsung с грилем и биокерамическим покрытием.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Объем">23 л</spec>
+      <spec name="Мощность">800 Вт</spec>
+      <spec name="Тип управления">Электронное</spec>
+    </specs>
+  </product>
+
+  <product id="micro2">
+    <name>LG NeoChef</name>
+    <brand>LG</brand>
+    <category>Микроволновки</category>
+    <price currency="BYN">479.00</price>
+    <image>img/micro2.png</image>
+    <rating>4.8</rating>
+    <reviews>870</reviews>
+    <description>Микроволновка LG с инверторной технологией и равномерным нагревом.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Объем">25 л</spec>
+      <spec name="Мощность">1000 Вт</spec>
+      <spec name="Тип управления">Электронное</spec>
+    </specs>
+  </product>
+
+  <!-- УТЮГИ -->
+  <product id="ytug1">
+    <name>Philips DST3041</name>
+    <brand>Philips</brand>
+    <category>Утюги</category>
+    <price currency="BYN">149.00</price>
+    <image>img/ytug1.png</image>
+    <rating>4.7</rating>
+    <reviews>210</reviews>
+    <description>Утюг Philips с керамической подошвой SteamGlide и мощным паровым ударом.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Мощность">2600 Вт</spec>
+      <spec name="Паровой удар">200 г/мин</spec>
+      <spec name="Покрытие подошвы">Керамика</spec>
+    </specs>
+  </product>
+
+  <product id="ytug2">
+    <name>Tefal TurboPro</name>
+    <brand>Tefal</brand>
+    <category>Утюги</category>
+    <price currency="BYN">159.00</price>
+    <image>img/ytug2.png</image>
+    <rating>4.8</rating>
+    <reviews>330</reviews>
+    <description>Утюг Tefal с технологией Durilium AirGlide и мощным паровым ударом.</description>
+    <specs>
+      <spec name="Класс">A</spec>
+      <spec name="Мощность">2800 Вт</spec>
+      <spec name="Паровой удар">220 г/мин</spec>
+      <spec name="Покрытие подошвы">Durilium</spec>
+    </specs>
+  </product>
+
+</store>

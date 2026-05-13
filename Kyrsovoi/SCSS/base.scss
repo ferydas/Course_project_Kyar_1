@@ -1,0 +1,220 @@
+/* ===========================
+   base.scss — общий стиль
+=========================== */
+//переменные
+$fon: #0f1115;
+$fon2: #151823;
+$fon3: #1c1f2a;
+$sin: #4f8cff;
+$sin2: #6fa0ff;
+$txt: #f5f7ff;
+$txt2: #9ea3b5;
+$rad: 14px;
+$anim: 0.18s ease-out;
+
+/* БАЗА */
+body.dark-theme {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: $fon;
+  color: $txt;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* HEADER */
+.shapka {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(10, 12, 16, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  .shapka-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // Лого слева, бургер/меню справа
+    padding: 14px 0;
+    position: relative;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: $txt;
+      font-weight: 700;
+      z-index: 61; // Чтобы лого было выше меню
+    }
+
+    .nav {
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: $txt2;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 999px;
+        transition: $anim;
+        display: block;
+
+        &.active, &:hover {
+          background: rgba($sin, 0.15);
+          color: $txt;
+        }
+      }
+    }
+
+    /* Стили корзины */
+    .cart {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba($sin, 0.1);
+      border: 1px solid rgba($sin, 0.2);
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      color: $txt;
+      transition: $anim;
+      font-family: inherit;
+
+      &:hover { background: rgba($sin, 0.2); }
+
+      .cart-count {
+        min-width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: $sin;
+        color: #fff;
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .burger {
+      display: none; // Скрыт на десктопе
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      z-index: 65;
+      padding: 10px;
+      margin-right: 10px; // Компенсация падинга, чтобы был ровно у края
+
+      span {
+        width: 24px;
+        height: 2px;
+        background: $txt;
+        transition: $anim;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .burger { display: flex; }
+
+      .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0; // На мобилках лучше на всю ширину или задать min-width
+        background: $fon2;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+        ul {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 8px;
+        }
+
+        .nav-cart {
+          margin-top: 10px;
+          padding-top: 10px;
+          border-top: 1px solid rgba(255,255,255,0.05);
+          
+          .cart {
+            width: 100%;
+            justify-content: center;
+            padding: 12px;
+          }
+        }
+      }
+
+      // Открытие меню
+      .burger-toggle:checked ~ .nav {
+        display: block;
+      }
+
+      /* Анимация крестика */
+      .burger-toggle:checked + .burger span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+      .burger-toggle:checked + .burger span:nth-child(2) { opacity: 0; }
+      .burger-toggle:checked + .burger span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    }
+  }
+}
+
+.burger-toggle { display: none; }
+
+
+
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: $anim;
+
+  &.btn-blue {
+    background: $sin;
+    color: white;
+
+    &:hover {
+      background: $sin2;
+      transform: translateY(-2px);
+    }
+  }
+
+  &.btn-line {
+    background: transparent;
+    border: 1px solid rgba($txt, 0.3);
+    color: $txt;
+
+    &:hover {
+      border-color: $sin;
+      color: $sin;
+    }
+  }
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 20px 0;
+  text-align: center;
+  color: $txt2;
+}

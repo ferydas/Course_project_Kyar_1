@@ -1,0 +1,64 @@
+// =============================
+// СТРАНИЦА УСЛУГ
+// =============================
+
+.services-page {
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .services-intro {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #d7dbe6;
+    margin-bottom: 35px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+
+  .service-card {
+    background: #23262f;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+
+    &:hover {
+      transform: translateY(-4px);
+      background: #2a2d36;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: #cdd3df;
+      margin-bottom: 15px;
+    }
+
+    .service-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #4F8CFF;
+    }
+  }
+}
+
+// Адаптив
+@media (max-width: 600px) {
+  .services-page {
+    .services-intro {
+      font-size: 1.05rem;
+    }
+
+    .service-card {
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+/* ===========================
+   catalog.scss — каталог
+=========================== */
+
+@use "base" as *;
+
+.katalog {
+  padding: 30px 0;
+
+  .filtry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      color: $txt2;
+
+      input,
+      select {
+        padding: 8px 12px;
+        border-radius: $rad;
+        background: $fon2;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: $txt;
+      }
+    }
+  }
+
+  .filtry-btns {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+  }
+
+  .grid-katalog {
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1180px) {
+    .grid-katalog {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 780px) {
+    .grid-katalog {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+a { 
+  text-decoration: none; 
+}
