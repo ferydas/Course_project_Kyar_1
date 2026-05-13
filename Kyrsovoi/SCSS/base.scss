@@ -1,6 +1,4 @@
-/* ===========================
-   base.scss — общий стиль
-=========================== */
+/* base.scss — общий стиль */
 //переменные
 $fon: #0f1115;
 $fon2: #151823;
@@ -136,7 +134,7 @@ img {
         position: absolute;
         top: 100%;
         right: 0;
-        left: 0; // На мобилках лучше на всю ширину или задать min-width
+        left: 0; 
         background: $fon2;
         padding: 20px;
         border-bottom: 1px solid rgba(255,255,255,0.1);
