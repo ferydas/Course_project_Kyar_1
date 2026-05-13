@@ -1,6 +1,4 @@
-/* ===========================
-   КОРЗИНА
-=========================== */
+/* КОРЗИНА*/
 let cartCount = 0;
 const cartCountEl = document.getElementById("cartCount");
 
@@ -17,9 +15,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-/* ===========================
-   ФИЛЬТРЫ КАТАЛОГА
-=========================== */
+/* ФИЛЬТРЫ КАТАЛОГА*/
 const categoryFilter = document.getElementById("categoryFilter");
 const brandFilter = document.getElementById("brandFilter");
 const applyFilters = document.getElementById("applyFilters");
@@ -55,9 +51,7 @@ if (resetFilters) {
   });
 }
 
-/* ===========================
-   ЗАГРУЗКА ТОВАРА НА product.html
-=========================== */
+/* ЗАГРУЗКА ТОВАРА НА product.html*/
 
 function loadXML(path) {
   return fetch(path)
